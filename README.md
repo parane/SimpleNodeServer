@@ -1,12 +1,24 @@
-# webpack Dev server integration
-## 
+# Simple http api using Express Node.js web application framework
+
 >
 
 ## Introduction
->here we ll look into webpack-dev-server which should be used for development only.Use this server for live reloading. we just setup this server just for learning remaining two concept( loaders and plugins.) of webpack :) .
+>Access Web services with authorizatio. DB -mongo, web application framework - express, server- node, token create - jsonwebtoken
 
-## Step 1 : Add Webpack server dependency
+## Step 1 : Install dependencies
 
 ```
-npm install webpack-dev-server --save-dev
+npm install
+npm install jsonwebtoken
+```
+
+## Step 2 : Build using webpack
+```
+webpack --watch
+```
+
+## Step 3 : run node server
+```
+npm install -g nodemon
+nodemon dist/bundle.js
 ```
